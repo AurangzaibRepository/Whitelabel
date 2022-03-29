@@ -9,8 +9,8 @@
 
 <body>
     <div class="dv-base">
-        <div>
-            <?= img('images/logo.svg') ?>
+        <div class="dv-layout">
+            <?= img('images/icon.svg') ?>
         </div>
     </div>
 </body>
