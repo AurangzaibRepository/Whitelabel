@@ -4,6 +4,11 @@ namespace App\Controllers;
 
 class Home extends BaseController
 {
+    public function __construct()
+    {
+        helper('html');
+    }
+
     public function index()
     {
         $data['title'] = 'Home';
