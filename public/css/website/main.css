@@ -1,0 +1,17 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0px
+}
+
+.dv-base {
+    height: 100%;
+}
+
+.dv-top {
+    height: 36px;
+    background: linear-gradient(130deg, #ea5e5c 0%, #c53f3d 100%);
+}
