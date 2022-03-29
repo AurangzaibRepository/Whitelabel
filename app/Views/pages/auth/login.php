@@ -10,7 +10,12 @@
 <body>
     <div class="dv-base">
         <div class="dv-layout">
-            <?= img('images/icon.svg') ?>
+            <div class="dv-img">
+                <?= img('images/icon.svg') ?>
+            </div>
+            <div>
+
+            </div>
         </div>
     </div>
 </body>
