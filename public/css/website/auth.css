@@ -6,3 +6,21 @@ body {
     height: 100%;
     margin: 0px;
 }
+
+.dv-base {
+    align-items: center;
+    display: flex;
+    height: 100%;
+}
+
+.dv-layout {
+    width: 100%;
+}
+
+.dv-img {
+    text-align: center;
+}
+
+.dv-img img {
+    width: 14%;
+}
