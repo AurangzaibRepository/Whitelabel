@@ -8,5 +8,8 @@ class Authentication extends BaseController
 {
     public function index()
     {
+        $data['title'] = 'Login';
+
+        return view('pages/auth/login', $data);
     }
 }
