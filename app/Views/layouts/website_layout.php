@@ -10,7 +10,15 @@
 <body>
     <div class="dv-base">
         <div class="dv-top">
-            <?= $this->renderSection('contents') ?>
+            <label>School Of Whales</label>
+        </div>
+        <div class="dv-layout">
+            <div class="dv-leftmenu">
+
+            </div>
+            <div class="dv-contents">
+                <?= $this->renderSection('contents') ?>
+            </div>
         </div>
     </div>
 </body>
