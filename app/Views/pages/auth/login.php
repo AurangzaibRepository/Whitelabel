@@ -4,6 +4,7 @@
 <head>
     <title><?= esc($title) ?>
     </title>
+    <?= link_tag('css/website/auth.css') ?>
 </head>
 
 <body>
