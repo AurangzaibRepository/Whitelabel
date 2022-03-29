@@ -35,3 +35,12 @@ body {
     width: 17%;
     z-index: 1;
 }
+
+.dv-leftmenu .dv-logo {
+    margin-top: 23px;
+    text-align: center;
+}
+
+.dv-logo img {
+    width: 70%
+}
