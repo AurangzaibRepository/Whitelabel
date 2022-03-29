@@ -14,7 +14,9 @@
         </div>
         <div class="dv-layout">
             <div class="dv-leftmenu">
-
+                <div class="dv-logo">
+                    <?= img('images/icon.svg') ?>
+                </div>
             </div>
             <div class="dv-contents">
                 <?= $this->renderSection('contents') ?>
