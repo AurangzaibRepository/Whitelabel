@@ -3,12 +3,16 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\UserModel;
 
 class Auth extends BaseController
 {
+    protected $model;
+
     public function __construct()
     {
         helper(['html', 'form']);
+        $this->model = model(UserModel::class);
     }
 
     public function index()
@@ -23,5 +27,10 @@ class Auth extends BaseController
         $data['title'] = 'Register';
 
         return view('pages/auth/register', $data);
+    }
+
+    public function registerUser() 
+    {
+        $this->model->saveRecord($this->request);
     }
 }
