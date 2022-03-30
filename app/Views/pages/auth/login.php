@@ -2,7 +2,7 @@
 
 <?= $this->section('contents') ?>
             <div>
-                <?= form_open() ?>
+                <?= form_open('/auth/login') ?>
 
                 <?php if (session()->has('success')): ?>
 
