@@ -66,3 +66,10 @@ body {
 form label {
     font-size: 14px;
 }
+
+.btn-primary {
+    background: #202b57;
+    border-color: #202b57;
+    min-width: 66px;
+    padding: 3px 10px;
+}
