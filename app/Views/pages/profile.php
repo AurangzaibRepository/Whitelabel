@@ -16,6 +16,7 @@
                 <?= form_input([
                     'name' => 'first_name',
                     'id' => 'first_name',
+                    'value' => session()->get('first_name'),
                     'class' => 'form-control'
                 ]) ?>
             </div>
@@ -27,6 +28,7 @@
                 <?= form_input([
                     'name' => 'last_name',
                     'id' => 'last_name',
+                    'value' => session()->get('last_name'),
                     'class' => 'form-control'
                 ]) ?>
             </div>
@@ -38,6 +40,7 @@
                 <?= form_input([
                     'name' => 'email',
                     'id' => 'email',
+                    'value' => session()->get('email'),
                     'class' => 'form-control'
                 ]) ?>
             </div>
