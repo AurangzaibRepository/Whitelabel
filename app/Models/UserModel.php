@@ -28,4 +28,11 @@ class UserModel extends Model
 
         session()->set($data);
     }
+
+    public function updateRecord(RequestInterface $request): void
+    {
+        $data = $request->getRawInput();
+
+        $this->update(session()->get('id'), $data);
+    }
 }

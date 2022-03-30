@@ -23,4 +23,16 @@ class Home extends BaseController
 
         return view('pages/profile', $data);
     }
+
+    public function update()
+    {
+        try {
+            $this->model->updateRecord($this->request);
+            session()->setFlashdata('success', 'Profile updated successfully');
+
+            return redirect()->back();
+        } catch (\Exception $exception) {
+            die($exception->getMessage());
+        }
+    }
 }
