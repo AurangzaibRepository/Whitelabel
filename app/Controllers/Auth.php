@@ -32,5 +32,8 @@ class Auth extends BaseController
     public function registerUser()
     {
         $this->model->saveRecord($this->request);
+
+        session()->setFlashdata("success", "Account created sucessfully, you can login");
+        return redirect()->to('/auth');
     }
 }
