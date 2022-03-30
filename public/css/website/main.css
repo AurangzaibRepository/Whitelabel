@@ -44,3 +44,16 @@ body {
 .dv-logo img {
     width: 70%
 }
+
+.ul-left-menu {
+    list-style: none;
+    margin: 0px;
+    padding: 30px 7px 0px;
+}
+
+.ul-left-menu a {
+    color: #202b57;
+    display: block;
+    padding: 8px 8px 8px 12px;
+    text-decoration: none;
+}
