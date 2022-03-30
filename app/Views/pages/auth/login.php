@@ -9,6 +9,10 @@
                     <div class="alert alert-success"><?= session()->getFlashdata('success') ?></div>
                 <?php endif ?>
 
+                <?php if (session()->has('error')): ?>
+                    <div class="alert alert-danger"><?= session()->getFlashdata('error') ?> </div>
+                <?php endif ?>
+
                 <div class="row">
                     <div class="col-md-12">
                         <div class="mb-3">
