@@ -13,6 +13,8 @@
                 <?= img('images/icon.svg') ?>
             </div>
 
+            <label class="label-admin">Admin Login</label>
+
             <?= view('pages/admin/login_form') ?>
 
         </div>
