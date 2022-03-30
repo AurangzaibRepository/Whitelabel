@@ -35,4 +35,14 @@ class UserModel extends Model
 
         $this->update(session()->get('id'), $data);
     }
+
+
+    public function saveAdminSession(array $user): void
+    {
+        $data = [
+            'admin_id' => $user['id']
+        ];
+
+        session()->set($data);
+    }
 }

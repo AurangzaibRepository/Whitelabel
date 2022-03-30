@@ -22,18 +22,19 @@ class Admin extends BaseController
         return view('pages/admin/login', $data);
     }
 
-    public function login() 
+    public function login()
     {
         $data = $this->request->getRawInput();
 
-        $user = $this  
+        $user = $this
                     ->model
                     ->where('email', $data['email'])
                     ->where('role', 'admin')
                     ->first();
 
         if (!empty($user) && password_verify($data['password'], $user['password'])) {
-            
+            $this->model->saveAdminSession($user);
+            return redirect()->to('admin/users');
         }
 
         session()->setFlashdata('error', 'Invalid credentials');
