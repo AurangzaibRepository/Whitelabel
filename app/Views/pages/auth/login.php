@@ -16,6 +16,17 @@
 
             <div>
                 <?= form_open() ?>
+                <div class="row">
+                    <div class="col-md-12">
+                        <?= form_label('Email', 'email') ?>
+                        <?= form_input([
+                            'name' => 'email',
+                            'id' => 'email',
+                            'class' => 'form-control'
+                        ]) ?>
+                    </div>
+                    
+                </div>
 
                 <?= form_close() ?>
             </div>
