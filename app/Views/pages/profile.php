@@ -9,6 +9,11 @@
 </style>
 
 <?= form_open('home/update') ?>
+
+    <?php if (session()->has('success')): ?>
+        <div class="alert alert-success"> <?= session()->get('success') ?></div>
+    <?php endif ?>
+
     <div class="row">
         <div class="col-md-6">
             <div class="mb-3">
