@@ -37,9 +37,3 @@
                 <?= form_close() ?>
             </div>
 <?= $this->endSection() ?>
-  
-<?= $this->section('scripts') ?>
- 
-<?= script_tag('js/website/auth.js') ?>
-
- <?= $this->endSection() ?>

@@ -21,6 +21,6 @@
 
 <!-- Scripts -->
 <?= script_tag('js/jquery.min.js') ?>
-<?= $this->renderSection('scripts') ?>
+<?= script_tag('js/website/auth.js') ?>
 </body>
 </html>
