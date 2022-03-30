@@ -6,6 +6,9 @@
     </title>
     <?= link_tag('css/bootstrap.min.css') ?>
     <?= link_tag('css/website/main.css') ?>
+
+    <!-- Scripts -->
+    <?= script_tag('js/jquery.min.js') ?>
 </head>
 
 <body>
