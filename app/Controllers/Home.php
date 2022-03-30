@@ -35,4 +35,13 @@ class Home extends BaseController
             die($exception->getMessage());
         }
     }
+
+    public function delete()
+    {
+        $this->model->delete(session()->get('id'));
+
+        session()->destroy();
+
+        return redirect()->to('/auth');
+    }
 }
