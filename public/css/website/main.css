@@ -79,3 +79,7 @@ form label {
     display: none;
     font-size: 13px;
 }
+
+.alert {
+    padding: 6px 14px;
+}
