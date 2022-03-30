@@ -35,6 +35,9 @@
                             'type' => 'password',
                             'class' => 'form-control'
                         ]) ?>
+                        <?= anchor('/auth/register', 'Signup', [
+                            'class' => 'lnk-signup'
+                        ]) ?>
                         </div>
                         <div class="mb-3 text-center">
                             <?= form_submit('login', 'Login', [
