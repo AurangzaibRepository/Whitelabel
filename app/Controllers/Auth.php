@@ -29,7 +29,7 @@ class Auth extends BaseController
         return view('pages/auth/register', $data);
     }
 
-    public function registerUser() 
+    public function registerUser()
     {
         $this->model->saveRecord($this->request);
     }
