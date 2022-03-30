@@ -40,4 +40,18 @@ class Admin extends BaseController
         session()->setFlashdata('error', 'Invalid credentials');
         return redirect()->back();
     }
+
+    public function users()
+    {
+        $data['title'] = 'Users';
+
+        return view('pages/admin/users', $data);
+    }
+
+    public function logout()
+    {
+        session()->remove('admin_id');
+
+        return redirect()->to('admin');
+    }
 }
