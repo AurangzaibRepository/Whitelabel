@@ -13,9 +13,13 @@
             <div class="dv-img">
                 <?= img('images/icon.svg') ?>
             </div>
-            <div>
 
+            <div>
+                <?= form_open() ?>
+
+                <?= form_close() ?>
             </div>
+
         </div>
     </div>
 </body>
