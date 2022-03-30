@@ -53,6 +53,10 @@
 
         </div>
     </div>
+
+ <!-- Scripts -->
+ <?= script_tag('js/jquery.min.js') ?>
+ <?= script_tag('js/website/auth.js') ?>
 </body>
 
 </html>
