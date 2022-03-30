@@ -44,6 +44,15 @@
         </div>
     </div>
 
+    <div class="row">
+        <div class="col-md-12 text-end">
+        <?= form_submit('save', 'Save', [
+            'class' => 'btn btn-primary',
+            'onClick' => 'return validateForm()'
+        ]) ?>
+        </div>
+    </div>
+
 <?= form_close() ?>
 
 <?= $this->endSection() ?>
