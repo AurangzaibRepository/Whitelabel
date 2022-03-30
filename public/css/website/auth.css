@@ -30,7 +30,7 @@ body {
     width: 40%;
 }
 
-#btn-login {
+.btn-primary {
     padding: 4px 10px;
     width: 100%;
  }
