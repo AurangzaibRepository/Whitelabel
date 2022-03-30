@@ -14,7 +14,12 @@ body {
 }
 
 .dv-layout {
+    text-align: center;
     width: 100%;
+}
+
+.dv-layout form {
+    margin-top: 20px
 }
 
 .dv-img {
