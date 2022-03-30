@@ -13,6 +13,6 @@ class Home extends BaseController
     {
         $data['title'] = 'Home';
 
-        return view('pages/home', $data);
+        return view('pages/profile', $data);
     }
 }
