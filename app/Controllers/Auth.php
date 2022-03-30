@@ -22,6 +22,23 @@ class Auth extends BaseController
         return view('pages/auth/login', $data);
     }
 
+    public function login()
+    {
+        $data = $this->request->getRawInput();
+
+        $user = $this
+                    ->model
+                    ->where('email', $data['email'])
+                    ->findAll();
+
+        if (!empty($user) && password_verify($data['password'], $user[0]['password'])) {
+            return redirect()->to('/');
+        }
+
+        session()->setFlashData('error', 'Invalid credentials');
+        return redirect()->back();
+    }
+
     public function register()
     {
         $data['title'] = 'Register';
@@ -31,9 +48,13 @@ class Auth extends BaseController
 
     public function registerUser()
     {
-        $this->model->saveRecord($this->request);
+        try {
+            $this->model->saveRecord($this->request);
 
-        session()->setFlashdata("success", "Account created sucessfully, you can login");
-        return redirect()->to('/auth');
+            session()->setFlashdata("success", "Account created sucessfully, you can login");
+            return redirect()->to('/auth');
+        } catch (\Exception $exception) {
+            die($exception->getMessage());
+        }
     }
 }
