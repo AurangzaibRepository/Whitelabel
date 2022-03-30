@@ -47,3 +47,7 @@ body {
      display: none;
      font-size: 13px;
  }
+
+ label {
+     font-size: 14px
+ }
