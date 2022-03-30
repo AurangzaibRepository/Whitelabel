@@ -31,11 +31,14 @@ body {
 }
 
 .btn-primary {
+    background-color: #202b57;
+    border-color: #202b57;
     padding: 4px 10px;
     width: 100%;
  }
 
  .lnk-signup {
+     color: #202b57;
     float: right;
     font-size: 13px;
     margin-bottom: 11px;
