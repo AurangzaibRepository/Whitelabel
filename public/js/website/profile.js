@@ -20,3 +20,13 @@ function validateField(elementID, errorID) {
         $(`#${errorID}`).css('display', 'block');
     }
 }
+
+function confirmDelete() {
+
+    let message = "Are you sure you want to delete your account?";
+
+    if (confirm(message) === true) {
+        
+        window.location = '/home/delete';
+    } 
+}

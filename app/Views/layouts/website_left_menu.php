@@ -3,7 +3,7 @@
         <a href="/home" class="lnk-profile">Profile</a>
     </li>
     <li>
-        <a>Delete account</a>
+        <a onClick="confirmDelete()">Delete account</a>
     </li>
     <li>
         <a href="/auth/logout">Logout</a>
