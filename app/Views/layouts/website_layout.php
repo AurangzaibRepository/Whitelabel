@@ -17,6 +17,19 @@
                 <div class="dv-logo">
                     <?= img('images/icon.svg') ?>
                 </div>
+
+                <ul class="ul-left-menu">
+                    <li>
+                        <a href="/home">Profile</a>
+                    </li>
+                    <li>
+                        <a>Delete account</a>
+                    </li>
+                    <li>
+                        <a>Logout</a>
+                    </li>
+                </ul>
+
             </div>
             <div class="dv-contents">
                 <?= $this->renderSection('contents') ?>
