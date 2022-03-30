@@ -9,15 +9,15 @@
 </head>
 
 <body>
-<div class="dv-base">
+    <div class="dv-base">
         <div class="dv-layout">
             <div class="dv-img">
                 <?= img('images/icon.svg') ?>
             </div>
             
             <?= $this->renderSection('contents') ?>
-</div>
-</div>
+        </div>
+    </div>
 
 <!-- Scripts -->
 <?= script_tag('js/jquery.min.js') ?>
