@@ -12,7 +12,7 @@
                             'id' => 'first_name',
                             'class' => 'form-control'
                         ]) ?>
-                        <span class="spn-error" id="error-fname">First Name required</span>
+                        <span class="spn-error" id="error-fname">First name required</span>
                         </div>
 
                         <div class="mb-3">
@@ -22,7 +22,7 @@
                             'id' => 'last_name',
                             'class' => 'form-control'
                         ]) ?>
-                        <span class="spn-error" id="error-lname">Last Name required</span>
+                        <span class="spn-error" id="error-lname">Last name required</span>
                         </div>
 
                         <div class="mb-3">
@@ -33,6 +33,17 @@
                             'class' => 'form-control'
                         ]) ?>
                         <span class="spn-error" id="error-email">Email required</span>
+                        </div>
+
+                        <div class="mb-3">
+                        <?= form_label('Password', 'password') ?>
+                        <?= form_input([
+                            'name' => 'password',
+                            'id' => 'password',
+                            'type' => 'password',
+                            'class' => 'form-control'
+                        ]) ?>
+                        <span class="spn-error" id="error-password">Password required</span>
                         </div>
 
                         <div class="mb-3 text-center">
