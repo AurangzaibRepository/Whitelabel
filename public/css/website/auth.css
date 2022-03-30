@@ -34,3 +34,10 @@ body {
     padding: 4px 10px;
     width: 100%;
  }
+
+ .lnk-signup {
+    float: right;
+    font-size: 13px;
+    margin-bottom: 11px;
+    text-decoration: none
+ }
