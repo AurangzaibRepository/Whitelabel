@@ -2,7 +2,7 @@
 
 <?= $this->section('contents') ?>
             <div>
-                <?= form_open() ?>
+                <?= form_open('auth/registeruser') ?>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="mb-3">
