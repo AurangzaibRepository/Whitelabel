@@ -11,6 +11,18 @@ function validateForm() {
     return isValid;
 }
 
+function validateRegister() {
+
+    isValid = true;
+    $('.spn-error').css('display', 'none');
+
+    validateField('first_name', 'error-fname');
+    validateField('last_name', 'error-lname');
+    validateField('email', 'error-email');
+
+    return isValid;
+}
+
 function validateField(elementID, errorID) {
 
     if ($(`#${elementID}`).val().trim() === '') {
