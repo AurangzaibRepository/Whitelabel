@@ -4,6 +4,7 @@
 <head>
     <title><?= esc($title) ?>
     </title>
+    <?= link_tag('css/bootstrap.min.css') ?>
     <?= link_tag('css/website/auth.css') ?>
 </head>
 
@@ -25,7 +26,7 @@
                             'class' => 'form-control'
                         ]) ?>
                     </div>
-                    
+
                 </div>
 
                 <?= form_close() ?>
