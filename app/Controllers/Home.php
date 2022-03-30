@@ -6,7 +6,7 @@ class Home extends BaseController
 {
     public function __construct()
     {
-        helper('html');
+        helper(['html', 'form']);
     }
 
     public function index()
