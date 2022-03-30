@@ -1,5 +1,5 @@
 <div>
-    <?= form_open('/auth/login') ?>
+    <?= form_open('/admin/login') ?>
 
     <?php if (session()->has('success')): ?>
 
