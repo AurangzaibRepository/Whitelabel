@@ -8,4 +8,42 @@
     }
 </style>
 
+<?= form_open('home/update') ?>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="mb-3">
+                <?= form_label('First Name', 'first_name') ?>
+                <?= form_input([
+                    'name' => 'first_name',
+                    'id' => 'first_name',
+                    'class' => 'form-control'
+                ]) ?>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="mb-3">
+                <?= form_label('Last Name', 'last_name') ?>
+                <?= form_input([
+                    'name' => 'last_name',
+                    'id' => 'last_name',
+                    'class' => 'form-control'
+                ]) ?>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="mb-3">
+                <?= form_label('Email', 'email') ?>
+                <?= form_input([
+                    'name' => 'email',
+                    'id' => 'email',
+                    'class' => 'form-control'
+                ]) ?>
+            </div>
+        </div>
+    </div>
+
+<?= form_close() ?>
+
 <?= $this->endSection() ?>
