@@ -6,6 +6,6 @@
         <a>Delete account</a>
     </li>
     <li>
-        <a>Logout</a>
+        <a href="/auth/logout">Logout</a>
     </li>
 </ul>
