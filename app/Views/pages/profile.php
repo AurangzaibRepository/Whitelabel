@@ -16,7 +16,7 @@
                 <?= form_input([
                     'name' => 'first_name',
                     'id' => 'first_name',
-                    'value' => session()->get('first_name'),
+                    'value' => $data['first_name'],
                     'class' => 'form-control'
                 ]) ?>
                 <span class="spn-error" id="error-fname">First name required</span>
@@ -29,7 +29,7 @@
                 <?= form_input([
                     'name' => 'last_name',
                     'id' => 'last_name',
-                    'value' => session()->get('last_name'),
+                    'value' => $data['last_name'],
                     'class' => 'form-control'
                 ]) ?>
                 <span class="spn-error" id="error-lname">Last name required</span>
@@ -42,7 +42,7 @@
                 <?= form_input([
                     'name' => 'email',
                     'id' => 'email',
-                    'value' => session()->get('email'),
+                    'value' => $data['email'],
                     'class' => 'form-control'
                 ]) ?>
                 <span class="spn-error" id="error-email">Email required</span>
