@@ -19,6 +19,7 @@ function validateRegister() {
     validateField('first_name', 'error-fname');
     validateField('last_name', 'error-lname');
     validateField('email', 'error-email');
+    validateField('password', 'error-password');
 
     return isValid;
 }
