@@ -26,7 +26,9 @@
                             'id' => 'email',
                             'class' => 'form-control'
                         ]) ?>
+                        <span class="spn-error" id="error-email">Email required</span>
                         </div>
+
                         <div class="mb-3">
                         <?= form_label('Password', 'password') ?>
                         <?= form_input([
@@ -35,10 +37,12 @@
                             'type' => 'password',
                             'class' => 'form-control'
                         ]) ?>
+                        <span class="spn-error" id="error-password">Password required</span>
                         <?= anchor('/auth/register', 'Signup', [
                             'class' => 'lnk-signup'
                         ]) ?>
                         </div>
+
                         <div class="mb-3 text-center">
                             <?= form_submit('login', 'Login', [
                                 'id' => 'btn-login',
