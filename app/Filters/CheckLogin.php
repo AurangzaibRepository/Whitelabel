@@ -10,7 +10,7 @@ class CheckLogin implements FilterInterface
 {
     public function before(RequestInterface $request, $arguments = null)
     {
-        if (!session()->has('logged_in')) {
+        if (!session()->has('id')) {
             return redirect()->to('/auth');
         }
     }
