@@ -29,9 +29,11 @@ class Auth extends BaseController
         $user = $this
                     ->model
                     ->where('email', $data['email'])
-                    ->findAll();
+                    ->first();
 
-        if (!empty($user) && password_verify($data['password'], $user[0]['password'])) {
+        if (!empty($user) && password_verify($data['password'], $user['password'])) {
+            $this->model->saveSessionData($user);
+
             return redirect()->to('/');
         }
 

@@ -19,4 +19,16 @@ class UserModel extends Model
 
         $this->insert($data);
     }
+
+    public function saveSessionData(array $user): void
+    {
+        $data = [
+            'id' => $user['id'],
+            'first_name' => $user['first_name'],
+            'last_name' => $user['last_name'],
+            'email' => $user['email']
+        ];
+
+        session()->set($data);
+    }
 }
