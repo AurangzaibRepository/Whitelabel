@@ -36,8 +36,13 @@
                             'class' => 'form-control'
                         ]) ?>
                         </div>
+                        <div class="mb-3 text-center">
+                            <?= form_submit('login', 'Login', [
+                                'id' => 'btn-login',
+                                'class' => 'btn btn-primary'
+                            ]) ?>
+                        </div>
                     </div>
-
                 </div>
 
                 <?= form_close() ?>
