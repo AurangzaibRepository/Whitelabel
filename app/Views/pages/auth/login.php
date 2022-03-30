@@ -1,20 +1,6 @@
-<!doctype html>
-<html>
+<?= $this->extend('layouts/auth.php') ?>
 
-<head>
-    <title><?= esc($title) ?>
-    </title>
-    <?= link_tag('css/bootstrap.min.css') ?>
-    <?= link_tag('css/website/auth.css') ?>
-</head>
-
-<body>
-    <div class="dv-base">
-        <div class="dv-layout">
-            <div class="dv-img">
-                <?= img('images/icon.svg') ?>
-            </div>
-
+<?= $this->section('contents') ?>
             <div>
                 <?= form_open() ?>
                 <div class="row">
@@ -55,13 +41,9 @@
 
                 <?= form_close() ?>
             </div>
-
-        </div>
-    </div>
-
- <!-- Scripts -->
- <?= script_tag('js/jquery.min.js') ?>
+<?= $this->endSection() ?>
+  
+<?= $this->section('scripts') ?>
  <?= script_tag('js/website/auth.js') ?>
-</body>
 
-</html>
+ <?= $this->endSection() ?>
