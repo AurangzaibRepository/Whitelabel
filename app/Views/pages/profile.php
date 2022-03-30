@@ -55,4 +55,7 @@
 
 <?= form_close() ?>
 
+<!-- Scripts -->
+<?= script_tag('js/website/profile.js') ?>
+
 <?= $this->endSection() ?>
