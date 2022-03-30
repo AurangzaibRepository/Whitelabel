@@ -27,6 +27,10 @@ class Users extends Migration
                 'constraint' => '80',
                 'null' => true
             ],
+            'password' => [
+                'type' => 'VARCHAR',
+                'constraint' => '50'
+            ],
             'role' => [
                 'type' => 'ENUM("admin", "user")',
                 'default' => 'user',
