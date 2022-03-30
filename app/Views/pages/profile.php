@@ -19,6 +19,7 @@
                     'value' => session()->get('first_name'),
                     'class' => 'form-control'
                 ]) ?>
+                <span class="spn-error" id="error-fname">First name required</span>
             </div>
         </div>
 
@@ -31,6 +32,7 @@
                     'value' => session()->get('last_name'),
                     'class' => 'form-control'
                 ]) ?>
+                <span class="spn-error" id="error-lname">Last name required</span>
             </div>
         </div>
 
@@ -43,6 +45,7 @@
                     'value' => session()->get('email'),
                     'class' => 'form-control'
                 ]) ?>
+                <span class="spn-error" id="error-email">Email required</span>
             </div>
         </div>
     </div>

@@ -73,3 +73,9 @@ form label {
     min-width: 66px;
     padding: 3px 10px;
 }
+
+.spn-error {
+    color: red;
+    display: none;
+    font-size: 13px;
+}
