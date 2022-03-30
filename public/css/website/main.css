@@ -62,3 +62,7 @@ body {
     padding: 30px;
     width: 83%
 }
+
+form label {
+    font-size: 14px;
+}
