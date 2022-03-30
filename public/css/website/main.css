@@ -53,6 +53,7 @@ body {
 
 .ul-left-menu a {
     color: #202b57;
+    cursor: pointer;
     display: block;
     padding: 8px 8px 8px 12px;
     text-decoration: none;
