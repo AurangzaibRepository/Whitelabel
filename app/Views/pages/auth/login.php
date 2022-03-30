@@ -19,12 +19,23 @@
                 <?= form_open() ?>
                 <div class="row">
                     <div class="col-md-12">
+                        <div class="mb-3">
                         <?= form_label('Email', 'email') ?>
                         <?= form_input([
                             'name' => 'email',
                             'id' => 'email',
                             'class' => 'form-control'
                         ]) ?>
+                        </div>
+                        <div class="mb-3">
+                        <?= form_label('Password', 'password') ?>
+                        <?= form_input([
+                            'name' => 'password',
+                            'id' => 'password',
+                            'type' => 'password',
+                            'class' => 'form-control'
+                        ]) ?>
+                        </div>
                     </div>
 
                 </div>
