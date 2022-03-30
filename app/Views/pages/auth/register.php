@@ -25,6 +25,16 @@
                         <span class="spn-error" id="error-lname">Last Name required</span>
                         </div>
 
+                        <div class="mb-3">
+                        <?= form_label('Email', 'email') ?>
+                        <?= form_input([
+                            'name' => 'email',
+                            'id' => 'email',
+                            'class' => 'form-control'
+                        ]) ?>
+                        <span class="spn-error" id="error-email">Email required</span>
+                        </div>
+
                         <div class="mb-3 text-center">
                             <?= form_submit('register', 'Register', [
                                 'class' => 'btn btn-primary',
