@@ -31,9 +31,6 @@
                 'class' => 'form-control'
             ]) ?>
             <span class="spn-error" id="error-password">Password required</span>
-            <?= anchor('/auth/register', 'Signup', [
-                'class' => 'lnk-signup'
-            ]) ?>
             </div>
 
             <div class="mb-3 text-center">

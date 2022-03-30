@@ -58,3 +58,12 @@ body {
  .alert {
     padding: 6px 14px
  }
+
+ .label-admin {
+    color: #202b57;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+ }
