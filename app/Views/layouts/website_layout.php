@@ -4,6 +4,7 @@
 <head>
     <title><?= esc($title) ?>
     </title>
+    <?= link_tag('css/bootstrap.min.css') ?>
     <?= link_tag('css/website/main.css') ?>
 </head>
 
