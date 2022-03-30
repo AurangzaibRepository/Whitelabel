@@ -59,4 +59,11 @@ class Auth extends BaseController
             die($exception->getMessage());
         }
     }
+
+    public function logout()
+    {
+        session()->destroy();
+
+        return redirect()->to('/auth');
+    }
 }
