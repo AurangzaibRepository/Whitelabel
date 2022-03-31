@@ -8,7 +8,7 @@
     }
 </style>
 
-<table class="table table-bordered table-stripped">
+<table id="tbl-users" class="table table-bordered table-stripped">
     <thead>
         <tr>
             <th>No</th>
@@ -19,4 +19,6 @@
     </thead>
 </table>
 
+<!-- Scripts -->
+<?= script_tag('js/admin/users.js') ?>
 <?= $this->endSection();
