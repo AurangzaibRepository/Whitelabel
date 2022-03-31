@@ -11,8 +11,11 @@ function populateUsers() {
         'language': {
             'emptyTable': 'No record found'
         },
-        'columnDefs': [
-            {'targets': 0, 'width': '8%', 'class': 'text-center'}
-        ]
+        'columnDefs': [{
+            'targets': 0,
+            'width': '8%',
+            'class': 'text-center'
+        }],
+        'ajax': '/admin/userlisting'
     });
 }
