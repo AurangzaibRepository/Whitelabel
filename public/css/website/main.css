@@ -92,6 +92,10 @@ table th {
     font-weight: normal
 }
 
+table td {
+    font-size: 14px
+}
+
 .dataTables_info {
     font-size: 14px;
     padding-top: 6px !important
@@ -99,4 +103,9 @@ table th {
 
 .pagination {
     font-size: 14px;
+}
+
+.page-item.active .page-link {
+    background-color: #202b57;
+    border-color: #202b57
 }
