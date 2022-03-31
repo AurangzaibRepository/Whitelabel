@@ -11,7 +11,7 @@ class Admin extends BaseController
 
     public function __construct()
     {
-        helper(['html', 'form']);
+        helper('html');
         $this->model = model(UserModel::class);
     }
 
