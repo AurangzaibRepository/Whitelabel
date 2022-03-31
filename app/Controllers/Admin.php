@@ -48,6 +48,12 @@ class Admin extends BaseController
         return view('pages/admin/users', $data);
     }
 
+    public function userlisting()
+    {
+        $data = $this->model->getListing();
+        return $this->response->setJSON($data);
+    }
+
     public function logout()
     {
         session()->remove('admin_id');

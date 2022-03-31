@@ -45,4 +45,27 @@ class UserModel extends Model
 
         session()->set($data);
     }
+
+    public function getListing(): array
+    {
+        $data = [
+            'data' => []
+        ];
+
+        $userList = $this
+                        ->where('role', 'user')
+                        ->orderBy('id', 'DESC')
+                        ->findAll();
+
+        foreach ($userList as $key => $value) {
+            $data['data'][] = [
+                ($key+1),
+                $value['first_name'],
+                $value['last_name'],
+                $value['email']
+            ];
+        }
+
+        return $data;
+    }
 }
