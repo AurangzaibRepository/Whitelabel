@@ -67,7 +67,7 @@ class Filters extends BaseConfig
      */
     public $filters = [
         'checkLogin' => [
-        'before' => ['Home']
+            'before' => ['/', 'home', 'home/*']
         ]
     ];
 }
