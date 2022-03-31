@@ -10,6 +10,9 @@ function populateUsers() {
         'bSort': false,
         'language': {
             'emptyTable': 'No record found'
-        }
+        },
+        'columnDefs': [
+            {'targets': 0, 'width': '8%', 'class': 'text-center'}
+        ]
     });
 }
