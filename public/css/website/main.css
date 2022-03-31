@@ -84,3 +84,19 @@ form label {
 .alert {
     padding: 6px 14px;
 }
+
+table th {
+    background-color: #202b57 !important;
+    color: white;
+    font-size: 14px;
+    font-weight: normal
+}
+
+.dataTables_info {
+    font-size: 14px;
+    padding-top: 6px !important
+}
+
+.pagination {
+    font-size: 14px;
+}
