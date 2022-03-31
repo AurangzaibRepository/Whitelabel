@@ -8,7 +8,7 @@
     }
 </style>
 
-<table id="tbl-users" class="table table-bordered table-stripped">
+<table id="tbl-users" class="table table-striped table-bordered">
     <thead>
         <tr>
             <th>No</th>
