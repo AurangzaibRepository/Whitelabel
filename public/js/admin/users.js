@@ -4,5 +4,12 @@ $(function() {
 
 function populateUsers() {
 
-    $('#tbl-users').DataTable();
+    $('#tbl-users').DataTable({
+        'searching': false,
+        'bLengthChange': false,
+        'bSort': false,
+        'language': {
+            'emptyTable': 'No record found'
+        }
+    });
 }
