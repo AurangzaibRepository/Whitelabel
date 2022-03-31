@@ -5,10 +5,13 @@
     <title><?= esc($title) ?>
     </title>
     <?= link_tag('css/bootstrap.min.css') ?>
+    <?= link_tag('css/datatables.bootstrap5.min.css') ?>
     <?= link_tag('css/website/main.css') ?>
 
     <!-- Scripts -->
     <?= script_tag('js/jquery.min.js') ?>
+    <?= script_tag('js/datatables.min.js') ?>
+    <?= script_tag('js/datatables.bootstrap5.min.js') ?>
 </head>
 
 <body>
