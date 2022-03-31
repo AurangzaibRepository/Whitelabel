@@ -24,6 +24,7 @@ class Filters extends BaseConfig
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
         'checkLogin' => \App\Filters\CheckLogin::class,
+        'adminLogin' => \App\Filters\AdminLogin::class
     ];
 
     /**
@@ -68,6 +69,9 @@ class Filters extends BaseConfig
     public $filters = [
         'checkLogin' => [
             'before' => ['/', 'home', 'home/*']
+        ],
+        'adminLogin' => [
+            'before' => ['admin', 'admin/*']
         ]
     ];
 }
